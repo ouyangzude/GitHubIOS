@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MainViewController.h"
+#import "LoadingAlert.h"
 #import "HttpUtil.h"
 
 @interface ViewController : UIViewController

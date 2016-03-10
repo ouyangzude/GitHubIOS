@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30186B4D1C9166F90012F6F8 /* LoadingAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 30186B4C1C9166F90012F6F8 /* LoadingAlert.m */; };
 		305177051C871E4B00E18AD3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 305177041C871E4B00E18AD3 /* MainViewController.m */; };
 		3070F9351C86F243006ADA4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070F9341C86F243006ADA4E /* main.m */; };
 		3070F9381C86F243006ADA4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070F9371C86F243006ADA4E /* AppDelegate.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30186B4B1C9166F90012F6F8 /* LoadingAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingAlert.h; sourceTree = "<group>"; };
+		30186B4C1C9166F90012F6F8 /* LoadingAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingAlert.m; sourceTree = "<group>"; };
 		305177031C871E4B00E18AD3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		305177041C871E4B00E18AD3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		3070F9301C86F243006ADA4E /* TestIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30186B471C9158150012F6F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30186B4B1C9166F90012F6F8 /* LoadingAlert.h */,
+				30186B4C1C9166F90012F6F8 /* LoadingAlert.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		3070F9271C86F243006ADA4E = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +79,7 @@
 		3070F9321C86F243006ADA4E /* TestIOS */ = {
 			isa = PBXGroup;
 			children = (
+				30186B471C9158150012F6F8 /* View */,
 				3070F94A1C86FC05006ADA4E /* Utils */,
 				3070F9361C86F243006ADA4E /* AppDelegate.h */,
 				3070F9371C86F243006ADA4E /* AppDelegate.m */,
@@ -133,6 +146,7 @@
 				TargetAttributes = {
 					3070F92F1C86F243006ADA4E = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 3T5G63BDBC;
 					};
 				};
 			};
@@ -176,6 +190,7 @@
 				309E72421C871EDF0078CC79 /* RegistViewController.m in Sources */,
 				305177051C871E4B00E18AD3 /* MainViewController.m in Sources */,
 				3070F9381C86F243006ADA4E /* AppDelegate.m in Sources */,
+				30186B4D1C9166F90012F6F8 /* LoadingAlert.m in Sources */,
 				3070F9351C86F243006ADA4E /* main.m in Sources */,
 				3070F94D1C86FC19006ADA4E /* HttpUtil.m in Sources */,
 			);
@@ -287,10 +302,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TestIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.test.TestIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -299,10 +317,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TestIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.test.TestIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

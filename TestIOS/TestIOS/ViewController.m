@@ -39,8 +39,23 @@
     }
     
     if (msg.length !=0) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        [alertView show];
+//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+//        [alertView show];
+        //从IOS9.0起推荐使用这种方法
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:msg preferredStyle:UIAlertControllerStyleAlert];
+        // Create the actions.
+        UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            NSLog(@"The \"Okay/Cancel\" alert's other action occured.");
+        }];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+            NSLog(@"The \"Okay/Cancel\" alert's cancel action occured.");
+        }];
+        
+        // Add the actions.
+        [alertController addAction:cancelAction];
+        [alertController addAction:confirmAction];
+
+        [self presentViewController:alertController animated:YES completion:nil];
         return;
     }
     
@@ -73,15 +88,6 @@
             NSLog(@"receiveStr=%@", receiveStr);
             //解析json格式数据
             NSError *error;
-//            NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
-//            for(int i=0;i<[jsonArray count];i++){
-//                NSDictionary *jsonDic = [jsonArray objectAtIndex:i];
-//                NSString *idStr = [jsonDic objectForKey:@"id"];
-//                NSString *usernameStr = [jsonDic objectForKey:@"username"];
-//                NSString *passwordStr = [jsonDic objectForKey:@"password"];
-//                NSString *emailStr = [jsonDic objectForKey:@"e-mail"];
-//                NSLog(@"idStr=%@ usernameStr=%@ passwordStr=%@ emailStr=%@", idStr, usernameStr, passwordStr, emailStr);
-//            }
             NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
             if(error == nil){       //如果json解析正确
                 NSString *user_id = [jsonDictionary objectForKey:@"user_id"];
@@ -91,7 +97,6 @@
                 NSString *login_id = [jsonDictionary objectForKey:@"login_id"];
                 NSString *last_login_time = [jsonDictionary objectForKey:@"last_login_time"];
                 NSString *head_img_mark = [jsonDictionary objectForKey:@"head_img_mark"];
-                //          NSDictionary *jsonDic = [jsonDictionary objectForKey:@"weatherinfo"];
                 
                 //实现页面跳转
                 //页面跳转传值的相关知识：http://www.cnblogs.com/heri/archive/2013/03/18/2965815.html
@@ -110,8 +115,24 @@
                 //否则显示错误信息
                 NSLog(@"error=%@", error);
                 //弹出对话框
+                //从IOS9.0起这种方法就过时了
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:receiveStr delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
                 [alertView show];
+                //从IOS9.0起推荐使用这种方法
+//                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:receiveStr preferredStyle:UIAlertControllerStyleAlert];
+//                // Create the actions.
+//                UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+//                    NSLog(@"The \"Okay/Cancel\" alert's other action occured.");
+//                }];
+//                UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+//                    NSLog(@"The \"Okay/Cancel\" alert's cancel action occured.");
+//                }];
+//                
+//                // Add the actions.
+//                [alertController addAction:cancelAction];
+//                [alertController addAction:confirmAction];
+//                
+//                [ViewController.self presentViewController:alertController animated:YES completion:nil];
             }
         }else if ([data length] == 0 && error == nil){
             NSLog(@"Nothing was downloaded.");
@@ -119,8 +140,8 @@
             NSLog(@"Error happened = %@",error);
         }
     };
-    UIAlertView *loadingAlert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"载入中" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-    [loadingAlert show];
+    LoadingAlert *loadingAlert = [LoadingAlert alertControllerWithTitle:@"提示" message:@"载入中" preferredStyle:UIAlertControllerStyleAlert];
+//    [self presentViewController:loadingAlert animated:YES completion:nil];
     [HttpUtil asynHttp:urlStr param:params completionHandler:completionHandler];
 }
 
