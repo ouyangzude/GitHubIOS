@@ -1,8 +1,8 @@
 //
 //  HttpUtil.h
-//  TestIOS
+//  TestGitHub
 //
-//  Created by 歐陽 on 16/3/2.
+//  Created by 歐陽 on 16/3/6.
 //  Copyright © 2016年 歐陽. All rights reserved.
 //
 
@@ -10,11 +10,11 @@
 
 @interface HttpUtil : NSObject
 
++ (void)httpTest;
 + (void)httpPost:(NSString*)urlStr;
 + (void)httpPost:(NSString*)urlStr completionHandler:(void (^)(NSData * data, NSURLResponse * response, NSError * error))completionHandler;
-+ (void)asynHttp:(NSString*)urlStr param:(NSString*)params completionHandler:(void (^)(NSURLResponse* response, NSData* data, NSError* error))completionHandler;
 
-+ (void)test;
-+ (void)testJson;
++ (void)delegateAsynHttp;
++ (void)asynHttp;
 
 @end

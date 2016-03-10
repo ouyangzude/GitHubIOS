@@ -14,7 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *usernameView;
 @property (weak, nonatomic) IBOutlet UITextField *passwordView;
-@property (weak, nonatomic) IBOutlet UILabel *testView;
 
 - (IBAction)backBtn:(id)sender;
 - (IBAction)loginBtn:(id)sender;

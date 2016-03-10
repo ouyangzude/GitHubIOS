@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302C9C651C8C7CBB006F9AC4 /* HttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 302C9C641C8C7CBB006F9AC4 /* HttpUtil.m */; };
 		30CAA2321C8B2C3D001239A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CAA2311C8B2C3D001239A0 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		302C9C631C8C7CBB006F9AC4 /* HttpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpUtil.h; sourceTree = "<group>"; };
+		302C9C641C8C7CBB006F9AC4 /* HttpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpUtil.m; sourceTree = "<group>"; };
 		30CAA22E1C8B2C3D001239A0 /* TestGitHub */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestGitHub; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CAA2311C8B2C3D001239A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302C9C621C8C7C9B006F9AC4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				302C9C631C8C7CBB006F9AC4 /* HttpUtil.h */,
+				302C9C641C8C7CBB006F9AC4 /* HttpUtil.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		30CAA2251C8B2C3D001239A0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				30CAA2311C8B2C3D001239A0 /* main.m */,
+				302C9C621C8C7C9B006F9AC4 /* Utils */,
 			);
 			path = TestGitHub;
 			sourceTree = "<group>";
@@ -119,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30CAA2321C8B2C3D001239A0 /* main.m in Sources */,
+				302C9C651C8C7CBB006F9AC4 /* HttpUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +251,7 @@
 				30CAA2371C8B2C3D001239A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
