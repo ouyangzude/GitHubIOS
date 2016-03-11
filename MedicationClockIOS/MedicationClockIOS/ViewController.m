@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  TestIOS
+//  MedicationClockIOS
 //
-//  Created by 歐陽 on 16/3/2.
+//  Created by 歐陽 on 16/3/11.
 //  Copyright © 2016年 歐陽. All rights reserved.
 //
 
@@ -14,49 +14,48 @@
 
 @implementation ViewController
 
-- (IBAction)backBtn:(id)sender{
-    //关闭当前页面
-    [self dismissViewControllerAnimated:true completion: (nil)];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (IBAction)loginBtn:(id)sender{
-    
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)loginBtn:(id)sender {
+    //读取文本框
     NSString *usernameText = _usernameView.text;
     NSString *passwordText = _passwordView.text;
-//    NSString *usernameText = @"abc";
-//    NSString *passwordText = @"asd";
-    
-    //设置文本框关闭软键盘
-    //    [_usernameView resignFirstResponder];
-    //    [_passwordView resignFirstResponder];
-    //如果文本框都在self.view里面，也可以用下面这种方法关闭软键盘
+    //如果文本框都在self.view里面，可以用下面这种方法关闭软键盘
     [self.view endEditing:YES];
     
     NSString *msg;
     if ([usernameText isEqualToString:@""] || usernameText == NULL) {
         msg = @"用户名不能为空";
     } else if([passwordText isEqualToString:@""] || passwordText == NULL){
-        msg = @"用户名不能为空";
+        msg = @"密码不能为空";
     }
     
     if (msg.length !=0) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
         [alertView show];
         //从IOS9.0起推荐使用这种方法
-//        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:msg preferredStyle:UIAlertControllerStyleAlert];
-//        // Create the actions.
-//        UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-//            NSLog(@"The \"Okay/Cancel\" alert's other action occured.");
-//        }];
-//        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-//            NSLog(@"The \"Okay/Cancel\" alert's cancel action occured.");
-//        }];
-//        
-//        // Add the actions.
-//        [alertController addAction:cancelAction];
-//        [alertController addAction:confirmAction];
-//
-//        [self presentViewController:alertController animated:YES completion:nil];
+        //        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:msg preferredStyle:UIAlertControllerStyleAlert];
+        //        // Create the actions.
+        //        UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        //            NSLog(@"The \"Okay/Cancel\" alert's other action occured.");
+        //        }];
+        //        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        //            NSLog(@"The \"Okay/Cancel\" alert's cancel action occured.");
+        //        }];
+        //
+        //        // Add the actions.
+        //        [alertController addAction:cancelAction];
+        //        [alertController addAction:confirmAction];
+        //
+        //        [self presentViewController:alertController animated:YES completion:nil];
         return;
     }
     NSLog(@"点击了登录按钮，username=%@，password=%@", usernameText, passwordText);
@@ -65,23 +64,24 @@
     NSString *urlStr = @"http://www.xbrjblkj.com:8124/BlmemServer2.04/appUserAction!userLogin.ac";
     NSString *params = [NSString stringWithFormat:@"store_id=1&username=%@&password=%@", usernameText, passwordText];
     NSLog(@"params%@", params);
-    
-//    void (^completionHandler)(NSData *, NSURLResponse *, NSError *) = ^(NSData *data, NSURLResponse *response, NSError *error) {
-//        NSLog(@"调用回调函数");
-//        if ([data length] > 0 && error == nil) {
-//            //输出返回值
-//            NSString *receiveStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-//            _testView.text = receiveStr;
-//            NSLog(@"receiveStr=%@", receiveStr);
-//            
-//        }else if ([data length] == 0 && error == nil){
-//            NSLog(@"Nothing was downloaded.");
-//        }else if (error != nil){
-//            NSLog(@"Error happened = %@",error);
-//        }
-//    };
-//    [HttpUtil httpPost:urlStr completionHandler:completionHandler];
-    
+    //    void (^completionHandler)(NSData *, NSURLResponse *, NSError *) = ^(NSData *data, NSURLResponse *response, NSError *error) {
+    //        NSLog(@"调用回调函数");
+    //        if ([data length] > 0 && error == nil) {
+    //            //输出返回值
+    //            NSString *receiveStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+    //            _testView.text = receiveStr;
+    //            NSLog(@"receiveStr=%@", receiveStr);
+    //
+    //        }else if ([data length] == 0 && error == nil){
+    //            NSLog(@"Nothing was downloaded.");
+    //        }else if (error != nil){
+    //            NSLog(@"Error happened = %@",error);
+    //        }
+    //    };
+    //    [HttpUtil httpPost:urlStr completionHandler:completionHandler];
+    //    void (^completionHandler1)(NSURLResponse *, NSData *, NSError *) = ^(NSURLResponse *response, NSData *data, NSError *error) {
+    //    };
+    //    NSLog(@"completionHandler1=%@", completionHandler1);
     void (^completionHandler)(NSURLResponse *, NSData *, NSError *) = ^(NSURLResponse *response, NSData *data, NSError *error) {
         NSLog(@"调用回调函数");
         if ([data length] > 0 && error == nil) {
@@ -116,24 +116,25 @@
             }else{
                 //否则显示错误信息
                 NSLog(@"error=%@", error);
-                //弹出对话框 从IOS9.0起这种方法就过时了
+                //弹出对话框
+                //从IOS9.0起这种方法就过时了
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:receiveStr delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
                 [alertView show];
-                //弹出对话框 从IOS9.0起推荐使用这种方法
-//                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:receiveStr preferredStyle:UIAlertControllerStyleAlert];
-//                // Create the actions.
-//                UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-//                    NSLog(@"The \"Okay/Cancel\" alert's other action occured.");
-//                }];
-//                UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-//                    NSLog(@"The \"Okay/Cancel\" alert's cancel action occured.");
-//                }];
-//                
-//                // Add the actions.
-//                [alertController addAction:cancelAction];
-//                [alertController addAction:confirmAction];
-//                
-//                [ViewController.self presentViewController:alertController animated:YES completion:nil];
+                //从IOS9.0起推荐使用这种方法
+                //                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:receiveStr preferredStyle:UIAlertControllerStyleAlert];
+                //                // Create the actions.
+                //                UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+                //                    NSLog(@"The \"Okay/Cancel\" alert's other action occured.");
+                //                }];
+                //                UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+                //                    NSLog(@"The \"Okay/Cancel\" alert's cancel action occured.");
+                //                }];
+                //
+                //                // Add the actions.
+                //                [alertController addAction:cancelAction];
+                //                [alertController addAction:confirmAction];
+                //
+                //                [ViewController.self presentViewController:alertController animated:YES completion:nil];
             }
         }else if ([data length] == 0 && error == nil){
             NSLog(@"Nothing was downloaded.");
@@ -141,19 +142,10 @@
             NSLog(@"Error happened = %@",error);
         }
     };
-    LoadingAlert *loadingAlert = [LoadingAlert alertControllerWithTitle:@"提示" message:@"载入中" preferredStyle:UIAlertControllerStyleAlert];
-    [self presentViewController:loadingAlert animated:YES completion:nil];
     [HttpUtil asynHttp:urlStr param:params completionHandler:completionHandler];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)registBtn:(id)sender {
 }
 
 @end
