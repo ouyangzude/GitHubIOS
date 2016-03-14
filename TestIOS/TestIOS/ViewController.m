@@ -109,6 +109,8 @@
                 //    MainViewController* mainView=[[MainViewController alloc]init];
                 //只能通过storyboard对象并使用storyboardID获取界面对象
                 MainViewController *mainView=[self.storyboard instantiateViewControllerWithIdentifier:@"mainView"];
+                //如果把storyboard改成xib，则用这种方法获取界面对象
+//                MainViewController *mainViewController= [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:[NSBundle mainBundle]];
                 //过时函数，在IOS6.0的时候就废弃了
                 //    [self presentModalViewController:mainView animated:YES];
                 //在新版本中这么调用跳转页面的函数

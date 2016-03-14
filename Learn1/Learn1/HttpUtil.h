@@ -12,6 +12,6 @@
 
 + (void)httpPost:(NSString*)urlStr;
 + (void)httpPost:(NSString*)urlStr completionHandler:(void (^)(NSData * data, NSURLResponse * response, NSError * error))completionHandler;
-+ (void)asynHttp:(NSString*)urlStr param:(NSString*)params completionHandler:(void (^)(NSURLResponse* response, NSData* data, NSError* error))completionHandler;
++ (void)asynHttp:(NSString*)urlStr param:(NSString*)params callbackHandler:(void (^)(int httpState, NSString* result))callbackHandler;
 
 @end

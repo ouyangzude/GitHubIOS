@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  MedicationClockIOS
+//  Learn2
 //
-//  Created by 歐陽 on 16/3/11.
+//  Created by 歐陽 on 16/3/12.
 //  Copyright © 2016年 歐陽. All rights reserved.
 //
 
@@ -28,17 +28,21 @@
     //读取文本框
     NSString *usernameText = _usernameView.text;
     NSString *passwordText = _passwordView.text;
-    //如果文本框都在self.view里面，可以用下面这种方法关闭软键盘
+    //设置文本框关闭软键盘
+    //    [_usernameView resignFirstResponder];
+    //    [_passwordView resignFirstResponder];
+    //如果文本框都在self.view里面，也可以用下面这种方法关闭软键盘
     [self.view endEditing:YES];
-    
+    //设置对话框文本
     NSString *msg;
     if ([usernameText isEqualToString:@""] || usernameText == NULL) {
         msg = @"用户名不能为空";
     } else if([passwordText isEqualToString:@""] || passwordText == NULL){
-        msg = @"密码不能为空";
+        msg = @"用户名不能为空";
     }
-    
+    //如果对话框文本不为空
     if (msg.length !=0) {
+        //显示对话框
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:msg delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
         [alertView show];
         //从IOS9.0起推荐使用这种方法
@@ -58,34 +62,16 @@
         //        [self presentViewController:alertController animated:YES completion:nil];
         return;
     }
-    NSLog(@"点击了登录按钮，username=%@，password=%@", usernameText, passwordText);
-    
     //访问Http连接
     NSString *urlStr = @"http://www.xbrjblkj.com:8124/BlmemServer2.04/appUserAction!userLogin.ac";
     NSString *params = [NSString stringWithFormat:@"store_id=1&username=%@&password=%@", usernameText, passwordText];
     NSLog(@"params%@", params);
-    //    void (^completionHandler)(NSData *, NSURLResponse *, NSError *) = ^(NSData *data, NSURLResponse *response, NSError *error) {
-    //        NSLog(@"调用回调函数");
-    //        if ([data length] > 0 && error == nil) {
-    //            //输出返回值
-    //            NSString *receiveStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-    //            _testView.text = receiveStr;
-    //            NSLog(@"receiveStr=%@", receiveStr);
-    //
-    //        }else if ([data length] == 0 && error == nil){
-    //            NSLog(@"Nothing was downloaded.");
-    //        }else if (error != nil){
-    //            NSLog(@"Error happened = %@",error);
-    //        }
-    //    };
-    //    [HttpUtil httpPost:urlStr completionHandler:completionHandler];
-    //    void (^completionHandler1)(NSURLResponse *, NSData *, NSError *) = ^(NSURLResponse *response, NSData *data, NSError *error) {
-    //    };
-    //    NSLog(@"completionHandler1=%@", completionHandler1);
-    void (^callbackHandler)(int, NSString*) = ^(int httpState, NSString* result) {
-        
-    };
-    void (^completionHandler)(NSURLResponse *, NSData *, NSError *) = ^(NSURLResponse *response, NSData *data, NSError *error) {
+    
+    //打开载入中对话框
+    LoadingViewController *loadingAlert = [LoadingViewController alertControllerWithTitle:@"提示" message:@"载入中" preferredStyle:UIAlertControllerStyleAlert];
+    [self presentViewController:loadingAlert animated:YES completion:nil];
+    
+    void (^callbackHandler)(NSData *, NSError *) = ^(NSData *data, NSError *error) {
         NSLog(@"调用回调函数");
         if ([data length] > 0 && error == nil) {
             //输出返回值
@@ -107,23 +93,16 @@
                 //页面跳转传值的相关知识：http://www.cnblogs.com/heri/archive/2013/03/18/2965815.html
                 //通过委托类传递对象到下一页面
                 
-                
-                //在storyboard中直接创建对象会显示黑屏
-                //    MainViewController* mainView=[[MainViewController alloc]init];
-                //只能通过storyboard对象并使用storyboardID获取界面对象
-                MainViewController *mainView=[self.storyboard instantiateViewControllerWithIdentifier:@"mainView"];
-                //过时函数，在IOS6.0的时候就废弃了
-                //    [self presentModalViewController:mainView animated:YES];
-                //在新版本中这么调用跳转页面的函数
-                [self presentViewController:mainView animated:YES completion:nil];
+                //实现页面跳转
+                MainViewController *mainViewController= [[MainViewController alloc]initWithNibName:@"MainViewController" bundle:[NSBundle mainBundle]];
+                [self presentViewController:mainViewController animated:YES completion:nil];
             }else{
                 //否则显示错误信息
                 NSLog(@"error=%@", error);
-                //弹出对话框
-                //从IOS9.0起这种方法就过时了
+                //弹出对话框 从IOS9.0起这种方法就过时了
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:receiveStr delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
                 [alertView show];
-                //从IOS9.0起推荐使用这种方法
+                //弹出对话框 从IOS9.0起推荐使用这种方法
                 //                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:receiveStr preferredStyle:UIAlertControllerStyleAlert];
                 //                // Create the actions.
                 //                UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
@@ -145,10 +124,14 @@
             NSLog(@"Error happened = %@",error);
         }
     };
+//    [HttpUtil httpPost:urlStr completionHandler:completionHandler];
     [HttpUtil asynHttp:urlStr param:params callbackHandler:callbackHandler];
 }
 
 - (IBAction)registBtn:(id)sender {
+    //实现页面跳转
+    RegistViewController *registViewController= [[RegistViewController alloc]initWithNibName:@"RegistViewController" bundle:[NSBundle mainBundle]];
+    [self presentViewController:registViewController animated:YES completion:nil];
 }
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation HttpUtil
 
-+ (void)asynHttp:(NSString*)urlStr param:(NSString*)params completionHandler:(void (^)(NSURLResponse* response, NSData* data, NSError* error))completionHandler{
++ (void)asynHttp:(NSString*)urlStr param:(NSString*)params callbackHandler:(void (^)(int httpState, NSString* result))callbackHandler{
     NSLog(@"urlStr=%@ params=%@", urlStr, params);
     //第一步，创建url
     NSURL *url = [NSURL URLWithString:urlStr];
@@ -20,7 +20,22 @@
     //设置要发送的正文内容（适用于Post请求）
     NSData *data = [params dataUsingEncoding:NSUTF8StringEncoding];
     [request setHTTPBody:data];
-    //第三步，连接服务器（使用NSOperationQueue的方式）
+    //创建回调函数
+    void (^completionHandler)(NSURLResponse *, NSData *, NSError *) = ^(NSURLResponse *response, NSData *data, NSError *error) {
+        if ([data length] > 0 && error == nil) {
+            //输出返回值
+            NSString *receiveStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"receiveStr=%@", receiveStr);
+            callbackHandler(1, receiveStr);
+        }else if ([data length] == 0 && error == nil){
+            NSLog(@"Nothing was downloaded.");
+            callbackHandler(0, @"");
+        }else if (error != nil){
+            NSLog(@"Error happened = %@",error);
+            callbackHandler(-1, [NSString stringWithFormat:@"error=%@", error]);
+        }
+    };
+    //连接服务器（使用NSOperationQueue的方式）
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:completionHandler];
