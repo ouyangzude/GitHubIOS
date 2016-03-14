@@ -10,7 +10,7 @@
 #import "MainViewController.h"
 #import "RegistViewController.h"
 #import "HttpUtil.h"
-#import "LoadingViewController.h"
+#import "LoadingAlertController.h"
 
 @interface ViewController : UIViewController
 

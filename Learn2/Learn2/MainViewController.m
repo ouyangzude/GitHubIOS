@@ -34,4 +34,8 @@
 }
 */
 
+- (IBAction)backBtn:(id)sender {
+    [self dismissViewControllerAnimated:true completion: (nil)];
+}
+
 @end

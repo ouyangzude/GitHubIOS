@@ -1,18 +1,18 @@
 //
-//  LoadingViewController.m
+//  LoadingAlertController.m
 //  Learn2
 //
-//  Created by 歐陽 on 16/3/12.
+//  Created by 歐陽 on 16/3/14.
 //  Copyright © 2016年 歐陽. All rights reserved.
 //
 
-#import "LoadingViewController.h"
+#import "LoadingAlertController.h"
 
-@interface LoadingViewController ()
+@interface LoadingAlertController ()
 
 @end
 
-@implementation LoadingViewController
+@implementation LoadingAlertController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

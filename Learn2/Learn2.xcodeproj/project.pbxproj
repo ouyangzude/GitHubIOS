@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3005E6371C966D8E00C14CBB /* LoadingAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3005E6361C966D8E00C14CBB /* LoadingAlertController.m */; };
 		30EF256E1C93D1650005E84A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF256D1C93D1650005E84A /* main.m */; };
 		30EF25711C93D1650005E84A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25701C93D1650005E84A /* AppDelegate.m */; };
 		30EF25741C93D1650005E84A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25731C93D1650005E84A /* ViewController.m */; };
 		30EF25791C93D1650005E84A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF25781C93D1650005E84A /* Assets.xcassets */; };
 		30EF25841C93DF9F0005E84A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30EF25831C93DF9F0005E84A /* ViewController.xib */; };
 		30EF25AD1C94036D0005E84A /* HttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25AC1C94036D0005E84A /* HttpUtil.m */; };
-		30EF25B11C9406850005E84A /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25B01C9406850005E84A /* LoadingViewController.m */; };
 		30EF25B41C941ACC0005E84A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25B31C941ACC0005E84A /* MainViewController.m */; };
 		30EF25B61C941BCF0005E84A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30EF25B51C941BCF0005E84A /* MainViewController.xib */; };
 		30EF25C21C951B230005E84A /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25C11C951B230005E84A /* RegistViewController.m */; };
@@ -21,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3005E6351C966D8E00C14CBB /* LoadingAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingAlertController.h; sourceTree = "<group>"; };
+		3005E6361C966D8E00C14CBB /* LoadingAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingAlertController.m; sourceTree = "<group>"; };
 		30EF25691C93D1650005E84A /* Learn2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learn2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EF256D1C93D1650005E84A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30EF256F1C93D1650005E84A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,8 +34,6 @@
 		30EF25831C93DF9F0005E84A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		30EF25AB1C94036D0005E84A /* HttpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpUtil.h; sourceTree = "<group>"; };
 		30EF25AC1C94036D0005E84A /* HttpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpUtil.m; sourceTree = "<group>"; };
-		30EF25AF1C9406850005E84A /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
-		30EF25B01C9406850005E84A /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		30EF25B21C941ACC0005E84A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		30EF25B31C941ACC0005E84A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		30EF25B51C941BCF0005E84A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -112,8 +112,8 @@
 		30EF25AE1C94065E0005E84A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				30EF25AF1C9406850005E84A /* LoadingViewController.h */,
-				30EF25B01C9406850005E84A /* LoadingViewController.m */,
+				3005E6351C966D8E00C14CBB /* LoadingAlertController.h */,
+				3005E6361C966D8E00C14CBB /* LoadingAlertController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -194,8 +194,8 @@
 				30EF25C21C951B230005E84A /* RegistViewController.m in Sources */,
 				30EF25B41C941ACC0005E84A /* MainViewController.m in Sources */,
 				30EF25711C93D1650005E84A /* AppDelegate.m in Sources */,
-				30EF25B11C9406850005E84A /* LoadingViewController.m in Sources */,
 				30EF256E1C93D1650005E84A /* main.m in Sources */,
+				3005E6371C966D8E00C14CBB /* LoadingAlertController.m in Sources */,
 				30EF25AD1C94036D0005E84A /* HttpUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
