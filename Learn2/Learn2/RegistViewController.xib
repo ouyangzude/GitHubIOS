@@ -19,8 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5QO-QQ-Mec">
-                    <rect key="frame" x="38" y="0.0" width="584" height="592"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5QO-QQ-Mec">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VS3-5b-pIt">
                             <rect key="frame" x="279" y="75" width="34" height="21"/>
@@ -72,18 +72,18 @@
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOS-qP-8ty">
-                            <rect key="frame" x="129" y="71" width="30" height="30"/>
-                            <state key="normal" title="返回"/>
-                            <connections>
-                                <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="N14-1C-JWE"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFa-Lz-55C">
                             <rect key="frame" x="277" y="413" width="30" height="30"/>
                             <state key="normal" title="注册"/>
                             <connections>
                                 <action selector="registBtn:" destination="-1" eventType="touchUpInside" id="C06-FY-e1M"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOS-qP-8ty">
+                            <rect key="frame" x="109" y="66" width="30" height="30"/>
+                            <state key="normal" title="返回"/>
+                            <connections>
+                                <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="N14-1C-JWE"/>
                             </connections>
                         </button>
                     </subviews>
@@ -92,7 +92,10 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="5QO-QQ-Mec" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VHQ-9D-XyW"/>
+                <constraint firstItem="5QO-QQ-Mec" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FgG-dX-e4C"/>
+                <constraint firstItem="5QO-QQ-Mec" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KoK-G0-zxE"/>
+                <constraint firstAttribute="trailing" secondItem="5QO-QQ-Mec" secondAttribute="trailing" id="p7C-V3-aae"/>
+                <constraint firstAttribute="bottom" secondItem="5QO-QQ-Mec" secondAttribute="bottom" id="vea-Cf-Tkm"/>
             </constraints>
         </view>
     </objects>

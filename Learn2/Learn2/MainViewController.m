@@ -38,4 +38,17 @@
     [self dismissViewControllerAnimated:true completion: (nil)];
 }
 
+- (IBAction)bloodPressureBtn:(id)sender {
+    BloodPressureViewController *bloodPressureViewController= [[BloodPressureViewController alloc]initWithNibName:@"BloodPressureViewController" bundle:[NSBundle mainBundle]];
+    [self presentViewController:bloodPressureViewController animated:YES completion:nil];
+}
+
+- (IBAction)bloodSugarBtn:(id)sender {
+    BloodSugarViewController *bloodSugarViewController= [[BloodSugarViewController alloc]initWithNibName:@"BloodSugarViewController" bundle:[NSBundle mainBundle]];
+    [self presentViewController:bloodSugarViewController animated:YES completion:nil];
+}
+
+- (IBAction)medicationAlarmBtn:(id)sender {
+}
+
 @end

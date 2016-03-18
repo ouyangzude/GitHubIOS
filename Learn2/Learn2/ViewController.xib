@@ -18,45 +18,45 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdm-gp-2NP">
-                    <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC4-dC-qbu">
-                            <rect key="frame" x="283" y="29" width="34" height="21"/>
+                            <rect key="frame" x="283" y="49" width="34" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="用户名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fem-gA-tM4">
-                            <rect key="frame" x="174" y="98" width="68" height="21"/>
+                            <rect key="frame" x="174" y="118" width="68" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OPy-wl-rVE">
-                            <rect key="frame" x="311" y="94" width="97" height="30"/>
+                            <rect key="frame" x="311" y="114" width="97" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zAG-Gq-a04">
-                            <rect key="frame" x="311" y="155" width="97" height="30"/>
+                            <rect key="frame" x="311" y="175" width="97" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gw1-o3-0Vi">
-                            <rect key="frame" x="319" y="211" width="30" height="30"/>
+                            <rect key="frame" x="319" y="231" width="30" height="30"/>
                             <state key="normal" title="注册"/>
                             <connections>
                                 <action selector="registBtn:" destination="-1" eventType="touchUpInside" id="PbI-T4-ORX"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZr-wX-vkC">
-                            <rect key="frame" x="191" y="159" width="51" height="21"/>
+                            <rect key="frame" x="191" y="179" width="51" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9t4-vI-AVP">
-                            <rect key="frame" x="224" y="211" width="30" height="30"/>
+                            <rect key="frame" x="224" y="231" width="30" height="30"/>
                             <state key="normal" title="登录"/>
                             <connections>
                                 <action selector="loginBtn:" destination="-1" eventType="touchUpInside" id="P9l-Yj-Oic"/>
@@ -68,7 +68,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="cdm-gp-2NP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yjS-HX-YJA"/>
+                <constraint firstItem="cdm-gp-2NP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nVx-FG-8CZ"/>
             </constraints>
         </view>
     </objects>

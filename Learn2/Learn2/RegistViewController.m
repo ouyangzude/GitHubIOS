@@ -10,6 +10,26 @@
 
 @implementation RegistViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    //新建一个按钮对象并同时添加位置和体积大小的属性
+    UIButton *backbtn=[[UIButton alloc] initWithFrame:CGRectMake(0 ,20, 100, 20)];
+    //设置按钮字体大小
+    backbtn.titleLabel.font    = [UIFont systemFontOfSize: 15];
+    [backbtn setTitle:@"返回" forState:UIControlStateNormal];
+    [backbtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [backbtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
+    //设置按钮点击事件
+    [backbtn addTarget:self action:@selector(backClick:) forControlEvents:UIControlEventTouchUpInside];
+    //添加按钮到视图
+    [self.view addSubview:backbtn];
+}
+//点击按钮的回调函数
+-(void)backClick:(UIButton *)sender{
+    [self dismissViewControllerAnimated:true completion: (nil)];
+}
+
 - (IBAction)registBtn:(id)sender {
     NSString *usernameText = _usernameView.text;
     NSString *passwordText = _passwordView.text;

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3005E6371C966D8E00C14CBB /* LoadingAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3005E6361C966D8E00C14CBB /* LoadingAlertController.m */; };
+		309F20AD1C994AF7002AA1DD /* BloodPressureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309F20AC1C994AF7002AA1DD /* BloodPressureViewController.m */; };
+		309F20AF1C9979FF002AA1DD /* BloodPressureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309F20AE1C9979FF002AA1DD /* BloodPressureViewController.xib */; };
+		309F20B31C997BB6002AA1DD /* BloodSugarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309F20B11C997BB6002AA1DD /* BloodSugarViewController.m */; };
+		309F20B41C997BB6002AA1DD /* BloodSugarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309F20B21C997BB6002AA1DD /* BloodSugarViewController.xib */; };
+		309F20B61C9994AC002AA1DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309F20B51C9994AC002AA1DD /* LaunchScreen.xib */; };
 		30EF256E1C93D1650005E84A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF256D1C93D1650005E84A /* main.m */; };
 		30EF25711C93D1650005E84A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25701C93D1650005E84A /* AppDelegate.m */; };
 		30EF25741C93D1650005E84A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25731C93D1650005E84A /* ViewController.m */; };
@@ -23,6 +28,13 @@
 /* Begin PBXFileReference section */
 		3005E6351C966D8E00C14CBB /* LoadingAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingAlertController.h; sourceTree = "<group>"; };
 		3005E6361C966D8E00C14CBB /* LoadingAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingAlertController.m; sourceTree = "<group>"; };
+		309F20AB1C994AF7002AA1DD /* BloodPressureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodPressureViewController.h; sourceTree = "<group>"; };
+		309F20AC1C994AF7002AA1DD /* BloodPressureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodPressureViewController.m; sourceTree = "<group>"; };
+		309F20AE1C9979FF002AA1DD /* BloodPressureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BloodPressureViewController.xib; sourceTree = "<group>"; };
+		309F20B01C997BB6002AA1DD /* BloodSugarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodSugarViewController.h; sourceTree = "<group>"; };
+		309F20B11C997BB6002AA1DD /* BloodSugarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodSugarViewController.m; sourceTree = "<group>"; };
+		309F20B21C997BB6002AA1DD /* BloodSugarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BloodSugarViewController.xib; sourceTree = "<group>"; };
+		309F20B51C9994AC002AA1DD /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		30EF25691C93D1650005E84A /* Learn2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learn2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EF256D1C93D1650005E84A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30EF256F1C93D1650005E84A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +65,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		309F20A71C993123002AA1DD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				30EF25721C93D1650005E84A /* ViewController.h */,
+				30EF25731C93D1650005E84A /* ViewController.m */,
+				30EF25831C93DF9F0005E84A /* ViewController.xib */,
+				30EF25C01C951B230005E84A /* RegistViewController.h */,
+				30EF25C11C951B230005E84A /* RegistViewController.m */,
+				30EF25C31C951B320005E84A /* RegistViewController.xib */,
+				30EF25B21C941ACC0005E84A /* MainViewController.h */,
+				30EF25B31C941ACC0005E84A /* MainViewController.m */,
+				30EF25B51C941BCF0005E84A /* MainViewController.xib */,
+				309F20AB1C994AF7002AA1DD /* BloodPressureViewController.h */,
+				309F20AC1C994AF7002AA1DD /* BloodPressureViewController.m */,
+				309F20AE1C9979FF002AA1DD /* BloodPressureViewController.xib */,
+				309F20B01C997BB6002AA1DD /* BloodSugarViewController.h */,
+				309F20B11C997BB6002AA1DD /* BloodSugarViewController.m */,
+				309F20B21C997BB6002AA1DD /* BloodSugarViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		30EF25601C93D1650005E84A = {
 			isa = PBXGroup;
 			children = (
@@ -73,18 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				30EF25AE1C94065E0005E84A /* View */,
+				309F20A71C993123002AA1DD /* ViewController */,
 				30EF25AA1C94034C0005E84A /* Utils */,
 				30EF256F1C93D1650005E84A /* AppDelegate.h */,
 				30EF25701C93D1650005E84A /* AppDelegate.m */,
-				30EF25721C93D1650005E84A /* ViewController.h */,
-				30EF25731C93D1650005E84A /* ViewController.m */,
-				30EF25831C93DF9F0005E84A /* ViewController.xib */,
-				30EF25C01C951B230005E84A /* RegistViewController.h */,
-				30EF25C11C951B230005E84A /* RegistViewController.m */,
-				30EF25C31C951B320005E84A /* RegistViewController.xib */,
-				30EF25B21C941ACC0005E84A /* MainViewController.h */,
-				30EF25B31C941ACC0005E84A /* MainViewController.m */,
-				30EF25B51C941BCF0005E84A /* MainViewController.xib */,
+				309F20B51C9994AC002AA1DD /* LaunchScreen.xib */,
 				30EF25781C93D1650005E84A /* Assets.xcassets */,
 				30EF257D1C93D1650005E84A /* Info.plist */,
 				30EF256C1C93D1650005E84A /* Supporting Files */,
@@ -176,9 +203,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309F20B41C997BB6002AA1DD /* BloodSugarViewController.xib in Resources */,
 				30EF25841C93DF9F0005E84A /* ViewController.xib in Resources */,
 				30EF25B61C941BCF0005E84A /* MainViewController.xib in Resources */,
+				309F20B61C9994AC002AA1DD /* LaunchScreen.xib in Resources */,
 				30EF25C41C951B320005E84A /* RegistViewController.xib in Resources */,
+				309F20AF1C9979FF002AA1DD /* BloodPressureViewController.xib in Resources */,
 				30EF25791C93D1650005E84A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,7 +222,9 @@
 			files = (
 				30EF25741C93D1650005E84A /* ViewController.m in Sources */,
 				30EF25C21C951B230005E84A /* RegistViewController.m in Sources */,
+				309F20AD1C994AF7002AA1DD /* BloodPressureViewController.m in Sources */,
 				30EF25B41C941ACC0005E84A /* MainViewController.m in Sources */,
+				309F20B31C997BB6002AA1DD /* BloodSugarViewController.m in Sources */,
 				30EF25711C93D1650005E84A /* AppDelegate.m in Sources */,
 				30EF256E1C93D1650005E84A /* main.m in Sources */,
 				3005E6371C966D8E00C14CBB /* LoadingAlertController.m in Sources */,
@@ -288,6 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Learn2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.test.Learn2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Learn2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.test.Learn2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

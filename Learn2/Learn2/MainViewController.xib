@@ -21,11 +21,32 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="主界面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j35-Lj-kFB">
                             <rect key="frame" x="267" y="36" width="51" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcS-Wp-UYT">
+                            <rect key="frame" x="173" y="140" width="90" height="83"/>
+                            <state key="normal" image="hub2_bp_normal"/>
+                            <connections>
+                                <action selector="bloodPressureBtn:" destination="-1" eventType="touchUpInside" id="dR2-EJ-1IT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ev4-jg-wP9">
+                            <rect key="frame" x="251" y="229" width="82" height="85"/>
+                            <state key="normal" image="hub2_ck_normal"/>
+                            <connections>
+                                <action selector="medicationAlarmBtn:" destination="-1" eventType="touchUpInside" id="KfJ-D2-PO2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bc-X8-QEd">
+                            <rect key="frame" x="322" y="144" width="85" height="79"/>
+                            <state key="normal" image="hub2_bs_normal"/>
+                            <connections>
+                                <action selector="bloodSugarBtn:" destination="-1" eventType="touchUpInside" id="LTI-ek-uXX"/>
+                            </connections>
+                        </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-OS-06Y">
-                            <rect key="frame" x="165" y="32" width="30" height="30"/>
+                            <rect key="frame" x="130" y="32" width="30" height="30"/>
                             <state key="normal" title="返回"/>
                             <connections>
                                 <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="GXT-5k-eYe"/>
@@ -41,4 +62,9 @@
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="hub2_bp_normal" width="227" height="221"/>
+        <image name="hub2_bs_normal" width="227" height="221"/>
+        <image name="hub2_ck_normal" width="227" height="221"/>
+    </resources>
 </document>

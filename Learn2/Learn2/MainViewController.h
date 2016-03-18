@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BloodPressureViewController.h"
+#import "BloodSugarViewController.h"
 
 @interface MainViewController : UIViewController
 
 - (IBAction)backBtn:(id)sender;
+- (IBAction)bloodPressureBtn:(id)sender;
+- (IBAction)bloodSugarBtn:(id)sender;
+- (IBAction)medicationAlarmBtn:(id)sender;
 
 @end
