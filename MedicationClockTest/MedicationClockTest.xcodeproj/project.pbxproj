@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3005E6371C966D8E00C14CBB /* LoadingAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3005E6361C966D8E00C14CBB /* LoadingAlertController.m */; };
+		309F20AD1C994AF7002AA1DD /* BloodPressureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309F20AC1C994AF7002AA1DD /* BloodPressureViewController.m */; };
+		309F20AF1C9979FF002AA1DD /* BloodPressureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309F20AE1C9979FF002AA1DD /* BloodPressureViewController.xib */; };
+		309F20B31C997BB6002AA1DD /* BloodSugarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309F20B11C997BB6002AA1DD /* BloodSugarViewController.m */; };
+		309F20B41C997BB6002AA1DD /* BloodSugarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309F20B21C997BB6002AA1DD /* BloodSugarViewController.xib */; };
+		309F20B61C9994AC002AA1DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309F20B51C9994AC002AA1DD /* LaunchScreen.xib */; };
+		30EDC26C1CA2B82600CFEB5B /* MyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EDC26B1CA2B82600CFEB5B /* MyCalendarView.m */; };
+		30EDC26F1CA2B85B00CFEB5B /* MyCalendarTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EDC26E1CA2B85B00CFEB5B /* MyCalendarTool.m */; };
+		30EDC2721CA2B89B00CFEB5B /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EDC2711CA2B89B00CFEB5B /* ColorUtil.m */; };
+		30EF256E1C93D1650005E84A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF256D1C93D1650005E84A /* main.m */; };
+		30EF25711C93D1650005E84A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25701C93D1650005E84A /* AppDelegate.m */; };
+		30EF25741C93D1650005E84A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25731C93D1650005E84A /* ViewController.m */; };
+		30EF25791C93D1650005E84A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF25781C93D1650005E84A /* Assets.xcassets */; };
+		30EF25841C93DF9F0005E84A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30EF25831C93DF9F0005E84A /* ViewController.xib */; };
+		30EF25AD1C94036D0005E84A /* HttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25AC1C94036D0005E84A /* HttpUtil.m */; };
+		30EF25B41C941ACC0005E84A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25B31C941ACC0005E84A /* MainViewController.m */; };
+		30EF25B61C941BCF0005E84A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30EF25B51C941BCF0005E84A /* MainViewController.xib */; };
+		30EF25C21C951B230005E84A /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EF25C11C951B230005E84A /* RegistViewController.m */; };
+		30EF25C41C951B320005E84A /* RegistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30EF25C31C951B320005E84A /* RegistViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3005E6351C966D8E00C14CBB /* LoadingAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingAlertController.h; sourceTree = "<group>"; };
+		3005E6361C966D8E00C14CBB /* LoadingAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingAlertController.m; sourceTree = "<group>"; };
+		309F20AB1C994AF7002AA1DD /* BloodPressureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodPressureViewController.h; sourceTree = "<group>"; };
+		309F20AC1C994AF7002AA1DD /* BloodPressureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodPressureViewController.m; sourceTree = "<group>"; };
+		309F20AE1C9979FF002AA1DD /* BloodPressureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BloodPressureViewController.xib; sourceTree = "<group>"; };
+		309F20B01C997BB6002AA1DD /* BloodSugarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodSugarViewController.h; sourceTree = "<group>"; };
+		309F20B11C997BB6002AA1DD /* BloodSugarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodSugarViewController.m; sourceTree = "<group>"; };
+		309F20B21C997BB6002AA1DD /* BloodSugarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BloodSugarViewController.xib; sourceTree = "<group>"; };
+		309F20B51C9994AC002AA1DD /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		30EDC26A1CA2B82600CFEB5B /* MyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalendarView.h; sourceTree = "<group>"; };
+		30EDC26B1CA2B82600CFEB5B /* MyCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalendarView.m; sourceTree = "<group>"; };
+		30EDC26D1CA2B85B00CFEB5B /* MyCalendarTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCalendarTool.h; sourceTree = "<group>"; };
+		30EDC26E1CA2B85B00CFEB5B /* MyCalendarTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCalendarTool.m; sourceTree = "<group>"; };
+		30EDC2701CA2B89B00CFEB5B /* ColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
+		30EDC2711CA2B89B00CFEB5B /* ColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
+		30EF25691C93D1650005E84A /* MedicationClockTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicationClockTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EF256D1C93D1650005E84A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30EF256F1C93D1650005E84A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30EF25701C93D1650005E84A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30EF25721C93D1650005E84A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		30EF25731C93D1650005E84A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		30EF25781C93D1650005E84A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30EF257D1C93D1650005E84A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30EF25831C93DF9F0005E84A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		30EF25AB1C94036D0005E84A /* HttpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpUtil.h; sourceTree = "<group>"; };
+		30EF25AC1C94036D0005E84A /* HttpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpUtil.m; sourceTree = "<group>"; };
+		30EF25B21C941ACC0005E84A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		30EF25B31C941ACC0005E84A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		30EF25B51C941BCF0005E84A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		30EF25C01C951B230005E84A /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		30EF25C11C951B230005E84A /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		30EF25C31C951B320005E84A /* RegistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30EF25661C93D1650005E84A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		309F20A71C993123002AA1DD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				30EDC2691CA2B61300CFEB5B /* New Group */,
+				30EF25721C93D1650005E84A /* ViewController.h */,
+				30EF25731C93D1650005E84A /* ViewController.m */,
+				30EF25831C93DF9F0005E84A /* ViewController.xib */,
+				30EF25C01C951B230005E84A /* RegistViewController.h */,
+				30EF25C11C951B230005E84A /* RegistViewController.m */,
+				30EF25C31C951B320005E84A /* RegistViewController.xib */,
+				30EF25B21C941ACC0005E84A /* MainViewController.h */,
+				30EF25B31C941ACC0005E84A /* MainViewController.m */,
+				30EF25B51C941BCF0005E84A /* MainViewController.xib */,
+				309F20AB1C994AF7002AA1DD /* BloodPressureViewController.h */,
+				309F20AC1C994AF7002AA1DD /* BloodPressureViewController.m */,
+				309F20AE1C9979FF002AA1DD /* BloodPressureViewController.xib */,
+				309F20B01C997BB6002AA1DD /* BloodSugarViewController.h */,
+				309F20B11C997BB6002AA1DD /* BloodSugarViewController.m */,
+				309F20B21C997BB6002AA1DD /* BloodSugarViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		30EDC2691CA2B61300CFEB5B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		30EF25601C93D1650005E84A = {
+			isa = PBXGroup;
+			children = (
+				30EF256B1C93D1650005E84A /* MedicationClockTest */,
+				30EF256A1C93D1650005E84A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30EF256A1C93D1650005E84A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30EF25691C93D1650005E84A /* MedicationClockTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30EF256B1C93D1650005E84A /* MedicationClockTest */ = {
+			isa = PBXGroup;
+			children = (
+				30EF25AE1C94065E0005E84A /* View */,
+				309F20A71C993123002AA1DD /* ViewController */,
+				30EF25AA1C94034C0005E84A /* Utils */,
+				30EF256F1C93D1650005E84A /* AppDelegate.h */,
+				30EF25701C93D1650005E84A /* AppDelegate.m */,
+				309F20B51C9994AC002AA1DD /* LaunchScreen.xib */,
+				30EF25781C93D1650005E84A /* Assets.xcassets */,
+				30EF257D1C93D1650005E84A /* Info.plist */,
+				30EF256C1C93D1650005E84A /* Supporting Files */,
+			);
+			path = MedicationClockTest;
+			sourceTree = "<group>";
+		};
+		30EF256C1C93D1650005E84A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30EF256D1C93D1650005E84A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30EF25AA1C94034C0005E84A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				30EDC26D1CA2B85B00CFEB5B /* MyCalendarTool.h */,
+				30EDC26E1CA2B85B00CFEB5B /* MyCalendarTool.m */,
+				30EF25AB1C94036D0005E84A /* HttpUtil.h */,
+				30EF25AC1C94036D0005E84A /* HttpUtil.m */,
+				30EDC2701CA2B89B00CFEB5B /* ColorUtil.h */,
+				30EDC2711CA2B89B00CFEB5B /* ColorUtil.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		30EF25AE1C94065E0005E84A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30EDC26A1CA2B82600CFEB5B /* MyCalendarView.h */,
+				30EDC26B1CA2B82600CFEB5B /* MyCalendarView.m */,
+				3005E6351C966D8E00C14CBB /* LoadingAlertController.h */,
+				3005E6361C966D8E00C14CBB /* LoadingAlertController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30EF25681C93D1650005E84A /* MedicationClockTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EF25801C93D1650005E84A /* Build configuration list for PBXNativeTarget "MedicationClockTest" */;
+			buildPhases = (
+				30EF25651C93D1650005E84A /* Sources */,
+				30EF25661C93D1650005E84A /* Frameworks */,
+				30EF25671C93D1650005E84A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedicationClockTest;
+			productName = Learn2;
+			productReference = 30EF25691C93D1650005E84A /* MedicationClockTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30EF25611C93D1650005E84A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "歐陽";
+				TargetAttributes = {
+					30EF25681C93D1650005E84A = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 3T5G63BDBC;
+					};
+				};
+			};
+			buildConfigurationList = 30EF25641C93D1650005E84A /* Build configuration list for PBXProject "MedicationClockTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30EF25601C93D1650005E84A;
+			productRefGroup = 30EF256A1C93D1650005E84A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30EF25681C93D1650005E84A /* MedicationClockTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30EF25671C93D1650005E84A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309F20B41C997BB6002AA1DD /* BloodSugarViewController.xib in Resources */,
+				30EF25841C93DF9F0005E84A /* ViewController.xib in Resources */,
+				30EF25B61C941BCF0005E84A /* MainViewController.xib in Resources */,
+				309F20B61C9994AC002AA1DD /* LaunchScreen.xib in Resources */,
+				30EF25C41C951B320005E84A /* RegistViewController.xib in Resources */,
+				309F20AF1C9979FF002AA1DD /* BloodPressureViewController.xib in Resources */,
+				30EF25791C93D1650005E84A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30EF25651C93D1650005E84A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EDC26F1CA2B85B00CFEB5B /* MyCalendarTool.m in Sources */,
+				30EF25741C93D1650005E84A /* ViewController.m in Sources */,
+				30EF25C21C951B230005E84A /* RegistViewController.m in Sources */,
+				30EDC26C1CA2B82600CFEB5B /* MyCalendarView.m in Sources */,
+				309F20AD1C994AF7002AA1DD /* BloodPressureViewController.m in Sources */,
+				30EF25B41C941ACC0005E84A /* MainViewController.m in Sources */,
+				309F20B31C997BB6002AA1DD /* BloodSugarViewController.m in Sources */,
+				30EF25711C93D1650005E84A /* AppDelegate.m in Sources */,
+				30EF256E1C93D1650005E84A /* main.m in Sources */,
+				3005E6371C966D8E00C14CBB /* LoadingAlertController.m in Sources */,
+				30EF25AD1C94036D0005E84A /* HttpUtil.m in Sources */,
+				30EDC2721CA2B89B00CFEB5B /* ColorUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		30EF257E1C93D1650005E84A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30EF257F1C93D1650005E84A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30EF25811C93D1650005E84A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MedicationClockTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.test.Learn2;
+				PRODUCT_NAME = MedicationClockTest;
+			};
+			name = Debug;
+		};
+		30EF25821C93D1650005E84A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MedicationClockTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.test.Learn2;
+				PRODUCT_NAME = MedicationClockTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30EF25641C93D1650005E84A /* Build configuration list for PBXProject "MedicationClockTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF257E1C93D1650005E84A /* Debug */,
+				30EF257F1C93D1650005E84A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30EF25801C93D1650005E84A /* Build configuration list for PBXNativeTarget "MedicationClockTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EF25811C93D1650005E84A /* Debug */,
+				30EF25821C93D1650005E84A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30EF25611C93D1650005E84A /* Project object */;
+}
