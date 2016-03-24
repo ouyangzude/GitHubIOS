@@ -77,7 +77,6 @@
 		309F20A71C993123002AA1DD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				30EDC2691CA2B61300CFEB5B /* New Group */,
 				30EF25721C93D1650005E84A /* ViewController.h */,
 				30EF25731C93D1650005E84A /* ViewController.m */,
 				30EF25831C93DF9F0005E84A /* ViewController.xib */,
@@ -95,13 +94,6 @@
 				309F20B21C997BB6002AA1DD /* BloodSugarViewController.xib */,
 			);
 			name = ViewController;
-			sourceTree = "<group>";
-		};
-		30EDC2691CA2B61300CFEB5B /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 		30EF25601C93D1650005E84A = {
